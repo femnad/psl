@@ -2,6 +2,6 @@
 set -euoE pipefail
 
 java_exec=${PSL_JAVA:-java}
-jar_file=${psl_jar:-'build/libs/psl-0.1.0-all.jar'}
+jar_file=${PSL_JAR:-'psl.jar'}
 
 $java_exec -jar "$jar_file" $@
