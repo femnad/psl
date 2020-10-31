@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euoE pipefail
+
+java_exec=${PSL_JAVA:-java}
+jar_file=${psl_jar:-'build/libs/psl-0.1.0-all.jar'}
+
+$java_exec -jar "$jar_file" $@
