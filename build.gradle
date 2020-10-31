@@ -10,6 +10,8 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
+    id 'java'
 }
 
 java {
@@ -33,3 +35,8 @@ application {
     mainClass = 'psl.App'
 }
 
+application {
+    setMainClassName('psl.App')
+}
+
+version('0.1.0')
